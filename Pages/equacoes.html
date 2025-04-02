@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equações Polinomiais - MathVerse</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/equacoes.css">
+</head>
+<body>
+    <header>
+        <div id="nome">
+            <h1>MathVerse</h1>
+        </div>
+        <nav>
+            <a href="../index.html">Início</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="equacoes-container">
+            <h2>Equações Polinomiais</h2>
+            
+            <div class="equacao-form">
+                <div>
+                    <label for="grau">Grau da Equação:</label>
+                    <select id="grau" class="equacao-input">
+                        <option value="1">1º Grau</option>
+                        <option value="2">2º Grau</option>
+                        <option value="3">3º Grau</option>
+                    </select>
+                </div>
+
+                <button class="btn-gerar" onclick="gerarQuestao()">Gerar Nova Questão</button>
+            </div>
+
+            <div class="questao-container" id="questao-container" style="display: none;">
+                <div class="resultado" id="resultado">
+                    <h3>Questão:</h3>
+                    <p id="equacao_display"></p>
+                </div>
+
+                <div class="opcoes-container">
+                    <h3>Escolha a resposta correta:</h3>
+                    <div id="opcoes" class="opcoes-grid"></div>
+                </div>
+
+                <div class="feedback" id="feedback"></div>
+
+                <div class="botoes-container">
+                    <button class="btn-verificar" onclick="verificarResposta()">Verificar Resposta</button>
+                    <button class="btn-proxima" onclick="gerarQuestao()" style="display: none;">Próxima Questão</button>
+                </div>
+
+                <div class="solucao-container" style="display: none;">
+                    <h3>Solução Detalhada:</h3>
+                    <div id="solucao-detalhada" class="solucao-detalhada"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MathVerse - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="../Script/equacoes.js"></script>
+</body>
+</html> 

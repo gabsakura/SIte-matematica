@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathVerse</title>
+    <title>MathVerse - Seu Portal de Matemática</title>
     <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
     <header>
-        <div id="nome">
+        <div class="header-content">
             <h1>MathVerse</h1>
         </div>
-        <div id="img_nav">
-            <img src="" alt="">
-        </div>
     </header>
+
     <main>
-        <div id="search">
-            <input type="search" placeholder="Pesquisar">
-        </div>
-        <div id="materias">
-            <div id="assunto">
-                <h2>Básico</h2>
-                <hr>
-                <span id="botao_ass"><a href="adicao.html">Adição</a></span>
-                <span id="botao_ass"><a href="#">Subtração</a></span>
-                <span id="botao_ass"><a href="#">Multiplicação</a></span>
-                <span id="botao_ass"><a href="#">Divisão</a></span>
-                <span id="botao_ass"><a href="#">Potenciação</a></span>
-                <span id="botao_ass"><a href="#">Radiciação</a></span>
+        <section class="search-section">
+            <h2>Bem-vindo ao MathVerse</h2>
+            <input type="text" class="search-input" placeholder="Pesquisar conteúdo..." id="search-input">
+        </section>
+
+        <div class="subjects-grid">
+            <div class="subject-card">
+                <h3>Equações Polinomiais</h3>
+                <p>Explore o mundo das equações polinomiais, aprenda sobre diferentes graus e métodos de resolução.</p>
+                <a href="Pages/equacoes.html" class="btn">Começar</a>
+            </div>
+
+            <div class="subject-card">
+                <h3>Exercícios</h3>
+                <p>Pratique seus conhecimentos com exercícios interativos e receba feedback instantâneo.</p>
+                <a href="Pages/exercicios.html" class="btn">Começar</a>
+            </div>
+
+            <div class="subject-card">
+                <h3>Teoria</h3>
+                <p>Aprofunde seus conhecimentos com conteúdo teórico detalhado e exemplos práticos.</p>
+                <a href="Pages/teoria.html" class="btn">Começar</a>
             </div>
         </div>
     </main>
-    <footer>
 
+    <footer>
+        <p>&copy; 2024 MathVerse. Todos os direitos reservados.</p>
     </footer>
-    <script src="Script/script.js"></script>
+
+    <script src="Script/search.js"></script>
 </body>
 </html>
