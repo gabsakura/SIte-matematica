@@ -20,7 +20,7 @@ const questoes = [
             "0",
             "1"
         ],
-        respostaCorreta: 0
+        respostaCorreta: 3
     },
     {
         pergunta: "Ao ser dividido pelo polinômio x - 2, o polinômio x⁴ - 2x³ + 2x + 1 deixa resto igual a:",
@@ -53,7 +53,7 @@ const questoes = [
             "15",
             "18"
         ],
-        respostaCorreta: 0
+        respostaCorreta: 3
     },
     {
         pergunta: "Considerando os polinômios P(x) = 2x³ - x² - 8x + 1 e Q(x) = 8x² + 2x - 3, o valor de P(2) / Q(0) é:",
@@ -144,14 +144,14 @@ function mostrarQuestao() {
     }
 
     const questao = questoes[questaoAtual];
-    
+
     // Atualizar interface
     progresso.textContent = `Questão ${questaoAtual + 1} de ${questoes.length}`;
     document.getElementById('pergunta').textContent = questao.pergunta;
-    
+
     // Exibir opções
     exibirOpcoes(questao.opcoes);
-    
+
     // Resetar estado
     opcaoSelecionada = null;
     feedback.style.display = 'none';
@@ -163,7 +163,7 @@ function mostrarQuestao() {
 function exibirOpcoes(opcoes) {
     const opcoesGrid = document.querySelector('.opcoes-grid');
     opcoesGrid.innerHTML = '';
-    
+
     opcoes.forEach((opcao, index) => {
         const div = document.createElement('div');
         div.className = 'opcao';
